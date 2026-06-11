@@ -22,6 +22,35 @@ function tick() {
 tick();
 setInterval(tick, 1000);
 
+// Carousel
+(function () {
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('#carouselDots .dot');
+    const total = track.children.length;
+    let current = 0;
+
+    function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    document.querySelector('.carousel-prev').addEventListener('click', () => goTo(current - 1));
+    document.querySelector('.carousel-next').addEventListener('click', () => goTo(current + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+    // Touch/swipe support
+    let startX = 0;
+    track.parentElement.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.parentElement.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    });
+
+    // Auto-advance every 4s
+    setInterval(() => goTo(current + 1), 4000);
+})();
+
 // FAQ accordion
 document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {

@@ -18,12 +18,13 @@
 <!-- DOBRA 1 — HERO -->
 <section class="hero">
 
-    <h1>500 Receitas <em>sem açúcar, glúten nem lactose</em> e sem perder o sabor</h1>
+    <h1>500 Receitas <em>sem açúcar, glúten nem lactose</em></h1>
 
-    <p class="sub">500 receitas práticas para comer bem todos os dias.</p>
+    <p class="sub">Receitas simples pra todas as refeições do dia, sem abrir mão do prazer e sabor.</p>
 
     <div class="hero-visual">
         <img src="public/hero.jpg" alt="Bolos, pães, panquecas, lasanhas e brigadeiros sem açúcar, glúten e lactose" class="hero-img">
+        <p class="hero-caption">Bolos, pães, sobremesas, lanches e refeições em versões leves e deliciosas para transformar sua rotina.</p>
     </div>
 
     <a href="#oferta" class="btn btn-green">QUERO MINHAS 500 RECEITAS AGORA</a>
@@ -110,61 +111,25 @@
     <div class="container">
         <h2 class="section-title">Olha o que estão fazendo com as receitas:</h2>
 
-        <div class="ugc-grid">
-            <div class="ugc-card">
-                <div class="ugc-header">
-                    <div class="ugc-avatar" style="background:linear-gradient(135deg,#bbf7d0,#4ade80);">👩</div>
-                    <div>
-                        <div class="ugc-name">Ana Paula S.</div>
-                        <div class="ugc-handle">@anapaula_cozinha</div>
-                    </div>
+        <div class="carousel">
+            <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide"><img src="public/1.jpg" alt="Resultado real 1"></div>
+                    <div class="carousel-slide"><img src="public/2.jpg" alt="Resultado real 2"></div>
+                    <div class="carousel-slide"><img src="public/3.jpg" alt="Resultado real 3"></div>
+                    <div class="carousel-slide"><img src="public/4.jpg" alt="Resultado real 4"></div>
                 </div>
-                <div class="ugc-photo" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">🎂</div>
-                <div class="ugc-caption">"Fiz o bolo de cenoura na festa da minha filha e todo mundo perguntou a receita. Ninguém acreditou que era sem açúcar! 😍"</div>
-                <div class="ugc-likes">❤️ 342 curtidas</div>
             </div>
-
-            <div class="ugc-card">
-                <div class="ugc-header">
-                    <div class="ugc-avatar" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4);">👩</div>
-                    <div>
-                        <div class="ugc-name">Fernanda M.</div>
-                        <div class="ugc-handle">@fernanda.fit</div>
-                    </div>
-                </div>
-                <div class="ugc-photo" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd);">🥞</div>
-                <div class="ugc-caption">"Panqueca de banana toda manhã! Meu marido que não ligava pra alimentação saudável agora pede todo dia 😂"</div>
-                <div class="ugc-likes">❤️ 518 curtidas</div>
-            </div>
-
-            <div class="ugc-card">
-                <div class="ugc-header">
-                    <div class="ugc-avatar" style="background:linear-gradient(135deg,#dbeafe,#93c5fd);">👩</div>
-                    <div>
-                        <div class="ugc-name">Cristiane L.</div>
-                        <div class="ugc-handle">@cris.receitas</div>
-                    </div>
-                </div>
-                <div class="ugc-photo" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">🍫</div>
-                <div class="ugc-caption">"O brigadeiro fit virou o docinho oficial da família. As crianças amam e não sabem que é fit. Melhor compra que fiz!"</div>
-                <div class="ugc-likes">❤️ 892 curtidas</div>
-            </div>
-
-            <div class="ugc-card">
-                <div class="ugc-header">
-                    <div class="ugc-avatar" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);">👩</div>
-                    <div>
-                        <div class="ugc-name">Mariana T.</div>
-                        <div class="ugc-handle">@mari_nutri</div>
-                    </div>
-                </div>
-                <div class="ugc-photo" style="background:linear-gradient(135deg,#fef9c3,#fef08a);">🍝</div>
-                <div class="ugc-caption">"A lasanha sem glúten ficou tão boa que minha sogra pediu a receita. Agora ela também quer o livro 😅✨"</div>
-                <div class="ugc-likes">❤️ 1.2K curtidas</div>
-            </div>
+            <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>
         </div>
 
-        <p class="text-center mt-16" style="color:#6b7280;font-size:14px;">👇 Arraste para ver mais resultados reais</p>
+        <div class="carousel-dots" id="carouselDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
 </section>
 
