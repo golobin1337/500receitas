@@ -179,10 +179,16 @@ footer p + p { margin-top: 8px; }
 .sticky-cta a { display: block; color: white; text-align: center; font-size: 16px; font-weight: 800; text-decoration: none; }
 
 @media (max-width: 640px) {
-    .sticky-cta { display: block; }
-    .hero { padding: 40px 16px; }
+    .hero { padding: 16px 16px 24px; }
+    .hero h1 { font-size: 24px; margin-bottom: 10px; }
+    .hero .sub { font-size: 14px; margin-bottom: 14px; line-height: 1.5; }
+    .hero-visual { margin-bottom: 14px; }
+    .hero-img { max-height: 240px; object-fit: cover; object-position: top; }
+    .hero-caption { font-size: 13px; margin-top: 8px; }
+    .hero .btn { font-size: 16px; padding: 15px 28px; }
+    .seals { gap: 10px; margin-top: 14px; }
+    .seal { font-size: 11px; }
     .section { padding: 44px 16px; }
     .guarantee-box { padding: 28px 20px; }
     .categories-block { padding: 28px 16px; }
-    body { padding-bottom: 60px; }
 }
