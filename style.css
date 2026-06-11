@@ -183,7 +183,7 @@ footer p + p { margin-top: 8px; }
     .hero h1 { font-size: 24px; margin-bottom: 10px; }
     .hero .sub { font-size: 14px; margin-bottom: 14px; line-height: 1.5; }
     .hero-visual { margin-bottom: 14px; }
-    .hero-img { max-height: 240px; object-fit: cover; object-position: top; }
+    .hero-img { max-height: none; object-fit: unset; }
     .hero-caption { font-size: 13px; margin-top: 8px; }
     .hero .btn { font-size: 16px; padding: 15px 28px; }
     .seals { gap: 10px; margin-top: 14px; }
