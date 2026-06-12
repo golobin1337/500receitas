@@ -96,7 +96,7 @@ body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--w
 .recipe-body p { font-size: 12px; color: #6b7280; line-height: 1.45; }
 
 /* CATEGORIES BLOCK */
-.categories-block { background: #0f172a; border-radius: 20px; padding: 40px; color: white; text-align: center; }
+.categories-block { background: #14532d; border-radius: 20px; padding: 40px; color: white; text-align: center; }
 .categories-block h3 { font-size: 22px; font-weight: 800; color: #fbbf24; margin-bottom: 6px; }
 .categories-block .sub { font-size: 14px; color: #9ca3af; margin-bottom: 28px; }
 .categories-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; text-align: left; }
@@ -202,7 +202,7 @@ body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--w
 
 /* GUARANTEE */
 .guarantee-box { max-width: 600px; margin: 0 auto; background: white; border-radius: 20px; padding: 44px 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.1); text-align: center; border: 3px solid #16a34a; }
-.guarantee-icon { font-size: 64px; margin-bottom: 16px; }
+.guarantee-img { width: 160px; height: auto; margin: 0 auto 16px; display: block; }
 .guarantee-title { font-size: 24px; font-weight: 800; color: #111827; margin-bottom: 16px; }
 .guarantee-text { font-size: 16px; color: #4b5563; line-height: 1.75; margin-bottom: 28px; }
 
