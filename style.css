@@ -15,7 +15,7 @@ body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--w
 .top-bar span { color: #fbbf24; }
 
 /* BUTTONS */
-.btn { display: inline-block; padding: 18px 40px; border-radius: 12px; font-size: 18px; font-weight: 800; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+.btn { display: inline-block; padding: 18px 40px; border-radius: 12px; font-size: 18px; font-weight: 800; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s; font-family: 'Inter', sans-serif; white-space: nowrap; }
 .btn-green { background: #16a34a; color: white; box-shadow: 0 4px 20px rgba(22,163,74,0.4); }
 .btn-green:hover { background: #15803d; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(22,163,74,0.5); }
 .btn-block { display: block; text-align: center; width: 100%; }
@@ -238,7 +238,8 @@ footer p + p { margin-top: 8px; }
     .hero-visual { margin-bottom: 14px; }
     .hero-img { max-height: none; object-fit: unset; }
     .hero-caption { font-size: 13px; margin-top: 8px; }
-    .hero .btn { font-size: 16px; padding: 15px 28px; }
+    .btn { font-size: 14px; padding: 15px 16px; }
+    .hero .btn { font-size: 14px; padding: 15px 16px; }
     .seals { gap: 10px; margin-top: 14px; }
     .seal { font-size: 11px; }
     .section { padding: 44px 16px; }
