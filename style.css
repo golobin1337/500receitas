@@ -97,6 +97,7 @@ body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--w
 
 /* CATEGORIES BLOCK */
 .categories-block { background: #14532d; border-radius: 20px; padding: 40px; color: white; text-align: center; }
+.categories-img { width: 100%; max-width: 480px; height: auto; display: block; margin: 0 auto 24px; border-radius: 12px; }
 .categories-block h3 { font-size: 22px; font-weight: 800; color: #fbbf24; margin-bottom: 6px; }
 .categories-block .sub { font-size: 14px; color: #9ca3af; margin-bottom: 28px; }
 .categories-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; text-align: left; }
