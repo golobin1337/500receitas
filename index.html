@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>500 Receitas — Sem Açúcar, Glúten e Lactose | Chef Maria Helena</title>
+    <!-- Preconnect para fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x5k8xpswnd");
-</script>
+    <!-- Preload da imagem hero (LCP) -->
+    <link rel="preload" as="image" href="public/hero.jpg">
+
+    <!-- Google Fonts carregado de forma assíncrona (não bloqueia renderização) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"></noscript>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -32,7 +34,7 @@
     <p class="sub">Descubra como fazer receitas simples pra todas as refeições do dia, sem abrir mão do prazer e sabor.</p>
 
     <div class="hero-visual">
-        <img src="public/hero.jpg" alt="Bolos, pães, panquecas, lasanhas e brigadeiros sem açúcar, glúten e lactose" class="hero-img">
+        <img src="public/hero.jpg" alt="Bolos, pães, panquecas, lasanhas e brigadeiros sem açúcar, glúten e lactose" class="hero-img" fetchpriority="high">
         <p class="hero-caption">Bolos, pães, sobremesas, lanches e refeições em versões leves e deliciosas para transformar sua rotina.</p>
     </div>
 
@@ -116,10 +118,10 @@
             <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
             <div class="carousel-track-wrapper">
                 <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-slide"><img src="public/1.jpg" alt="Resultado real 1"></div>
-                    <div class="carousel-slide"><img src="public/2.jpg" alt="Resultado real 2"></div>
-                    <div class="carousel-slide"><img src="public/3.jpg" alt="Resultado real 3"></div>
-                    <div class="carousel-slide"><img src="public/4.jpg" alt="Resultado real 4"></div>
+                    <div class="carousel-slide"><img src="public/1.jpg" alt="Resultado real 1" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="public/2.jpg" alt="Resultado real 2" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="public/3.jpg" alt="Resultado real 3" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="public/4.jpg" alt="Resultado real 4" loading="lazy"></div>
                 </div>
             </div>
             <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>
@@ -141,56 +143,56 @@
 
         <div class="recipe-grid">
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/bolo-cenoura.jpg" alt="Bolo de Cenoura com Cobertura Cremosa"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/bolo-cenoura.jpg" alt="Bolo de Cenoura com Cobertura Cremosa"></div>
                 <div class="recipe-body">
                     <h3>Bolo de Cenoura com Cobertura Cremosa</h3>
                     <p>Fofinho e molhadinho, ninguém chuta que é sem açúcar</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/pao.jpg" alt="Pão Caseiro Sem Glúten"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/pao.jpg" alt="Pão Caseiro Sem Glúten"></div>
                 <div class="recipe-body">
                     <h3>Pão Caseiro Sem Glúten</h3>
                     <p>Macio, simples, pronto para o café da manhã de qualquer dia</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/pamqueca.jpg" alt="Panqueca Leve de Banana"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/pamqueca.jpg" alt="Panqueca Leve de Banana"></div>
                 <div class="recipe-body">
                     <h3>Panqueca Leve de Banana</h3>
                     <p>Rápida, nutritiva — fica na mesa em menos de 10 minutos</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/lasanha.jpg" alt="Lasanha Cremosa Sem Glúten"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/lasanha.jpg" alt="Lasanha Cremosa Sem Glúten"></div>
                 <div class="recipe-body">
                     <h3>Lasanha Cremosa Sem Glúten</h3>
                     <p>Confortável e gostosa, perfeita para reunir a família</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/brigadeiro.jpg" alt="Brigadeiro Sem Açúcar"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/brigadeiro.jpg" alt="Brigadeiro Sem Açúcar"></div>
                 <div class="recipe-body">
                     <h3>Brigadeiro Sem Açúcar</h3>
                     <p>Cremoso e chocolatudo — a criança pede mais sem saber que é fit</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/torta.jpg" alt="Torta Salgada de Frango"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/torta.jpg" alt="Torta Salgada de Frango"></div>
                 <div class="recipe-body">
                     <h3>Torta Salgada de Frango</h3>
                     <p>Prática, leve e a mais pedida nas festas</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/brownie.jpg" alt="Brownie Fit de Chocolate"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/brownie.jpg" alt="Brownie Fit de Chocolate"></div>
                 <div class="recipe-body">
                     <h3>Brownie Fit de Chocolate</h3>
                     <p>Úmido, intenso, sem farinha de trigo — impossível parar no primeiro</p>
                 </div>
             </div>
             <div class="recipe-card">
-                <div class="recipe-photo"><img src="public/receitas/cookie.jpg" alt="Cookie Crocante Sem Glúten"></div>
+                <div class="recipe-photo"><img loading="lazy" src="public/receitas/cookie.jpg" alt="Cookie Crocante Sem Glúten"></div>
                 <div class="recipe-body">
                     <h3>Cookie Crocante Sem Glúten</h3>
                     <p>Crocante por fora, macio por dentro — o marido nem vai acreditar</p>
@@ -564,6 +566,15 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+
+<!-- Microsoft Clarity (analytics — carregado após o conteúdo) -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x5k8xpswnd");
+</script>
 </body>
 </html>
